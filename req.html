@@ -1,0 +1,259 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title>ABOUT US</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+  <style>
+    .content {
+      padding-top: 70px; 
+    }
+
+    .navbar {
+      margin-bottom: 0;
+      background-color: #202022;
+      border: 0;
+      font-size: 11px !important;
+      letter-spacing: 4px;
+      opacity: 0.9;
+    }
+
+    .navbar li a, .navbar .navbar-brand {
+      color: #d5d5d5 !important;
+    }
+
+    .navbar-nav li a:hover {
+      color: #fff !important;
+    }
+
+    .navbar-nav li.active a {
+      color: #fff !important;
+      background-color: #29292c !important;
+    }
+
+    .navbar-default .navbar-toggle {
+      border-color: transparent;
+    }
+
+    .dropdown-menu li a {
+      color: #000 !important;
+    }
+
+    .dropdown-menu li a:hover {
+      background-color: rgb(76, 65, 65) !important;
+    }
+
+    body {
+      background-image: url('beckgron.jpg');
+      background-size: cover; 
+      background-repeat: no-repeat; 
+    }
+
+    .footer {
+      text-align: center;
+      background-color: #2d2d30;
+      color: #f5f5f5;
+      padding: 32px;
+      position: fixed;
+      bottom: 0;
+      width: 100%;
+    }
+
+    .thumbnail img {
+      width: 200px;
+      height: 250px;
+      display: block;
+      margin-left: auto;
+      margin-right: auto;
+    }
+
+    body {
+      font-family: "Poetsen One", sans-serif;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      min-height: 100vh;
+      margin: 0;
+      background-color: #ffffff;
+    }
+
+    .container {
+      border: 5px solid rgb(249, 248, 248);
+      padding: 20px;
+      margin: 20px;
+      width: 100%;
+      max-width: 350px;
+      box-sizing: border-box;
+      border-radius: 15px;
+      background-size: cover;
+      background-position: center;
+      background-repeat: no-repeat;
+    }
+
+    .header {
+      text-align: center;
+      color: rgb(6, 6, 6);
+    }
+
+    form {
+      display: flex;
+      flex-direction: column;
+    }
+
+    form label,
+    form .peminatan,
+    form input,
+    form select,
+    form textarea {
+      color: rgb(247, 244, 244);
+    }
+
+    input::placeholder, textarea::placeholder {
+      color: rgb(10, 10, 10);
+      opacity: 1;
+    }
+
+    input, select, textarea, button {
+      margin-top: 5px;
+      background-color: #f3f0f0;
+      color: black;
+    }
+
+    input, textarea {
+      color: black; 
+    }
+
+    .peminatan {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 10px;
+    }
+
+    .form-container {
+      background: rgba(0, 0, 0, 0.7);
+      padding: 15px;
+      border-radius: 15px;
+      width: 280px;
+    }
+
+    .form-container h1 {
+      text-align: center;
+      margin-bottom: 15px;
+    }
+
+    .form-container input[type="text"],
+    .form-container select,
+    .form-container textarea {
+      width: 100%;
+      padding: 8px;
+      margin: 8px 0;
+      border: none;
+      border-radius: 5px;
+      color: black; 
+    }
+
+    .form-container input[type="radio"] {
+      margin-right: 5px;
+    }
+
+    .form-container label {
+      display: block;
+      margin-top: 8px;
+    }
+
+    .form-container button {
+      width: 100%;
+      padding: 10px;
+      background-color: #4CAF50;
+      color: white;
+      border: none;
+      border-radius: 5px;
+      cursor: pointer;
+    }
+
+    .form-container button:hover {
+      background-color: #45a049;
+    }
+
+    .form-container h2 {
+      text-align: center;
+      margin-bottom: 15px;
+      color: white; 
+    }
+  </style>
+</head>
+<body>
+  <nav class="navbar navbar-default navbar-fixed-top">
+    <div class="container-fluid">
+      <div class="navbar-header">
+        <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
+        </button>
+        <a class="navbar-brand" href="#">MY PETSHOP</a>
+      </div>
+      <div class="collapse navbar-collapse" id="myNavbar">
+        <ul class="nav navbar-nav navbar-right">
+          <li><a href="index.html">HOME</a></li>
+          <li><a href="about.html">ABOUT US</a></li>
+          <li><a href="pet.html">PELIHARA</a></li>
+          <li><a href="req.html">REQUEST</a></li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+
+  <div class="form-container">
+    <h2 class="form-container">Form Request</h2>
+    <form id="registrationForm">
+        <label for="spesies">Spesies</label>
+        <input type="text" id="spesies" name="spesies" placeholder="Masukan Spesies Hewan yang Anda inginkan secara detail" required>
+        
+        <label for="usia">Range Usia Hewan</label>
+        <input type="text" id="usia" name="usia" placeholder="Masukan Range Usia Hewan yang Anda inginkan" required>
+        
+        <label>Permintaan Tambahan</label>
+        <label><input type="radio" name="permintaan" value="Kandang" required> Kandang</label>
+        <label><input type="radio" name="permintaan" value="Pasir" required> Pasir</label>
+        <label><input type="radio" name="permintaan" value="Box" required> Box</label>
+        
+        <label for="jumlah">Jumlah</label>
+        <select id="jumlah" name="jumlah" required>
+            <option value="1">1</option>
+            <option value="2">2</option>
+            <option value="3">3</option>
+        </select>
+        
+        <label for="alamat">Alamat Penerima</label>
+        <textarea id="alamat" name="alamat" placeholder="Tulis Alamat Disini" required></textarea>
+        
+        <button type="submit">Kirim</button>
+    </form>
+  </div>
+  
+  <script>
+    document.getElementById('registrationForm').addEventListener('submit', function(event) {
+        event.preventDefault();
+        
+        
+        var spesies = document.getElementById('spesies').value;
+        var usia = document.getElementById('usia').value;
+        var permintaan = document.querySelector('input[name="permintaan"]:checked').value;
+        var jumlah = document.getElementById('jumlah').value;
+        var alamat = document.getElementById('alamat').value;
+        
+        var message = "Spesies: " + spesies + "\n" +
+                      "Range Usia Hewan: " + usia + "\n" +
+                      "Permintaan Tambahan: " + permintaan + "\n" +
+                      "Jumlah: " + jumlah + "\n" +
+                      "Alamat Penerima: " + alamat;
+        
+        alert(message); 
+    });
+  </script>
+</body>
+</html>
